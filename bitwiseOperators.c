@@ -8,6 +8,7 @@ void main(){
         1 & 2 to process this c converts the number to binary so,
         01
         10
+        00
         and performs and operation on the binary
         same goes to bitwise OR, XOR
 
@@ -39,7 +40,7 @@ void main(){
     printf(" a & b = %d\n", a & b);
     printf(" a | b = %d\n", a | b);
     printf(" a ^ b = %d\n", a ^ b);
-    printf(" a ~ b = %d\n", ~b);
+    printf(" ~ b = %d\n", ~b);
     printf(" a << b = %d\n", a << b);
     printf(" a >> b = %d\n", a >> b);
 }

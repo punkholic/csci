@@ -1,4 +1,4 @@
 #include <stdio.h>
 void main(){
-    printf("%ld", sizeof(char));
+    printf("%ld", sizeof(int));
 }

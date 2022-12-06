@@ -1,0 +1,91 @@
+printing:
+    new line (\n)
+    tab (\t)
+    escaping characters like " and \
+
+comments
+    single and multi line
+
+format specifier
+    char -> %c
+    float -> %f
+    int -> %d
+    double -> %lf
+
+"
+finding value range from bytes
+     – 2^(n-1) to 2^(n-1) – 1
+     where n is bit 
+     to convert bit from byte multiply by 8
+
+
+
+
+constant values
+
+
+operators:
+
+    Arithmetic operators
+    Assignment operators
+    Comparison operators
+    Logical operators
+    Bitwise operators
+
+
+
+
+
+
+
+
+
+
+
+
+    Arthmetic operators:
+        Addition
+        Subtraction
+        Multiplication
+        Division
+        Modulus
+        Increment
+        Decrement
+
+    Assignment operators:
+        =
+        +=
+        -=
+        *=
+        /=
+        %=
+        &=
+        |=
+        ^=
+        >>=
+        <<=
+
+    Comparison Operators
+        == 	Equal to 	x == y 	
+        != 	Not equal 	x != y 	
+        > 	Greater than 	x > y 	
+        < 	Less than 	x < y 	
+        >= 	Greater than or equal to 	x >= y 	
+        <= 	Less than or equal to 	x <= y
+
+
+    Logical Operator
+        &&  	Logical and 	
+        ||  	Logical or 	   
+        ! 	    Logical not
+
+    Bitwise operators:
+        &   Bitwise AND
+        |   Bitwise OR
+        ^   Bitwise XOR
+        ~   Bitwise complement
+        <<  Shift left
+        >>  Shift right
+
+
+    Sizeof Operator
