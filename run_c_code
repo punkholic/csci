@@ -1,0 +1,12 @@
+cd ->
+changes directory, code: cd folder_name
+
+drive_letter:->
+changes drive also known as local disk
+
+to run c file:
+gcc file_name
+if -o is not given use type a and press enter to run the code
+
+gcc file_name -o output_name
+if -o is given type output_name and press enter
