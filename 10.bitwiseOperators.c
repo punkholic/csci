@@ -2,7 +2,7 @@
 void main(){
     int a = 1;
     int b = 2;
-    
+    int c = a & b;
     /*
         # Bitwise AND
         1 & 2 to process this c converts the number to binary so,
