@@ -27,6 +27,7 @@ void main(){
             //initialization
             do{
                 //code
+                //counter
             }while(condiiton);
     */
 
