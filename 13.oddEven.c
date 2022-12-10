@@ -3,7 +3,7 @@ void main(){
     int a = 12;
     /*
     a % 2 gives reminder after dividing value of a with 2,
-    if the reminder is 1 it means the number cannot be divided with 2 
+    if the reminder is 1 it means the number cannot be divided by 2 
     so the value would be considered as odd 
     if reminder is 0 the value is considered as even
     */
@@ -14,7 +14,7 @@ void main(){
     }
     /*
     another way:
-    here a & 1 means the code is performing bitwise and operator
+    here a & 1 means the code is performing bitwise "and" operator
     every number which is odd will always have 1 as last bit after being converted to binary
     and every number which is even will always have 0 as last bit
 

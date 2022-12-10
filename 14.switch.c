@@ -1,6 +1,6 @@
 #include <stdio.h>
 void main(){
-    /*if you have many conditions using if else would cause chaos while reading code
+    /*if you have many conditions using if else, it would cause chaos while reading code
 
      so to tackle with this c provides another option which is known as switch
      syntax:
