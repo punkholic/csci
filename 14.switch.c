@@ -18,7 +18,7 @@ void main(){
      }
     */
  
-    int a = 1;
+    int a = 3;
     switch(a){
         case 1:{
             printf("the value of a is 1\n");
