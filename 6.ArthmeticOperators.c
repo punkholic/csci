@@ -1,6 +1,6 @@
 #include <stdio.h>
 void main(){
-    int a = 10;
+    int a = 11;
     int b = 2;
     int c = a - b;
     int d = a + b;
