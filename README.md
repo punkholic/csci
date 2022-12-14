@@ -4,7 +4,7 @@
 
 
 1. Press ```ctrl + r```
-2. Go to start on taskbar and click on run
+2. Go to ```start on taskbar``` and click on ```run```
 
 The following popup should appear
 
@@ -13,7 +13,7 @@ The following popup should appear
 
 ## To open notepad
 
-- Open run
+- Open ```run```
 - Type ```notepad++``` on run text input and click on ok or hit enter key
 - If notepad++ gave error type ```notepad``` and press enter
 ![notepad](https://www.smartlabsoftware.com/images/notepad-screen.gif)
