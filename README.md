@@ -7,6 +7,7 @@
 2. Go to start on taskbar and click on run
 
 The following popup should appeare
+
 ![Run image](https://www.maketecheasier.com/assets/uploads/2015/02/run-commands-window.png)
 
 
