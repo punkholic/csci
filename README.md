@@ -6,7 +6,7 @@
 1. Press ```ctrl + r```
 2. Go to start on taskbar and click on run
 
-The following popup should appeare
+The following popup should appear
 
 ![Run image](https://www.maketecheasier.com/assets/uploads/2015/02/run-commands-window.png)
 
@@ -26,7 +26,7 @@ The following popup should appeare
 
 
 - Press ```ctrl + s``` or click on ```file``` on top menu again click on ```save```.
-- A pop up will appeare now navigate to the place where you want to save the file.
+- A pop up will appear now navigate to the place where you want to save the file.
 ![save file](https://i.stack.imgur.com/3KX8F.png)
 - Change save as type to ```all files``` and give a name to the file with ```.c``` as extension, example: ```abc.c```
 - Now click on ```save```
