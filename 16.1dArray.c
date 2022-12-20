@@ -2,7 +2,7 @@
 void main(){
     /* 
     our normal datatype can only hold a singular value of its own kind
-    here is can only hold 12
+    here it can only hold 12
     so to store many kind of values in same variable name we can use array
     */
     int a = 12;
@@ -20,7 +20,7 @@ void main(){
     /*
         below i didn't give an value inside intArray2[] the big brackets because we are storing the 
         array values in the same line. because of this c automatically knows the size of array and 
-        gives it size cause we gave 3 values so c will know it has size of 3
+        gives it size cause we gave 3 values so c will know it is size of 3
     */
    int intArray2[] = {1,2,3};
 
