@@ -6,6 +6,7 @@ void main(){
     so to store many kind of values in same variable name we can use array
     */
     int a = 12;
+  
     
     /*
     if we want to create an array first and give its value below it, we need to define the size of array
@@ -16,14 +17,12 @@ void main(){
     intArray[0] = 12; // giving value below the defination
     intArray[1] = 44;
     intArray[2] = 23;
-
     /*
         below i didn't give an value inside intArray2[] the big brackets because we are storing the 
         array values in the same line. because of this c automatically knows the size of array and 
         gives it size cause we gave 3 values so c will know it is size of 3
     */
    int intArray2[] = {1,2,3};
-
 
     /*
         while giving size of array we need to count how many values we are storing like in intArray[3],

@@ -5,7 +5,9 @@ void main(){
     first index size refers to the amount of array inside the outer array
     second index size refers to the amount of value inside specific array
     */
-   int array2D[2][3] = {{1,2,3}, {4,5,6}};
+   int array2D[2][3] = {
+    {1,2,3}, {4,5,6}
+    };
    /*
    above array2D[2][3]
    2 means the amount of array provided to 2d array 
