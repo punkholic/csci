@@ -101,10 +101,11 @@ operators:
     functions
 
     header file
+    
+    struct and union
 
     file handeling
 
-    struct and union
     
 
 
