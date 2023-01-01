@@ -69,6 +69,7 @@ void main(){
         char class[100];
     } myDataType;
 
+
     // after doing so we can use myDataType as we use int
     myDataType std3;
      std3.rollNo = 12;

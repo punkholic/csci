@@ -22,6 +22,7 @@ void main(){
         array values in the same line. because of this c automatically knows the size of array and 
         gives it size cause we gave 3 values so c will know it is size of 3
     */
+
    int intArray2[] = {1,2,3};
 
     /*

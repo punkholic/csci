@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "csci.h"
+
 void main(){
     /*
     keeping functions and code in a same file makes code bulky, so to make it more tidy
@@ -16,6 +17,4 @@ void main(){
     */
 
    printData("Hello World\n");
-   int total = sum(2, 4);
-   printf("total = %d", total);
 }
