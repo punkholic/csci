@@ -1,4 +1,0 @@
-ram abc 55 3
-hari covid 73 7
-sita asd 63 6
-shyam covid 76 8
