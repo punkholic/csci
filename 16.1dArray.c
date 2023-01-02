@@ -24,7 +24,6 @@ void main(){
     */
 
    int intArray2[] = {1,2,3};
-
     /*
         while giving size of array we need to count how many values we are storing like in intArray[3],
         3 is the size

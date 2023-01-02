@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void main(){
-    int a = 1234;
+    int a = 123;
     int sum = 0;
 
     while(a != 0){
