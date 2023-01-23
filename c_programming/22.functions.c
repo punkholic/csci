@@ -37,5 +37,6 @@ void functionName(){
     printf("Hello World\n");
 }
 int sum1(int a, int b){
-    return a+b;
+    int c = a+b;
+    return c;
 }
