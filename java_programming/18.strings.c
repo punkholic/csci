@@ -17,7 +17,7 @@ void main(){
     /*
     just like other arrays we can define char array, in addition to that
     we can also define char array as name2 is defined
-    char name2[] = "ram";
+    int name2[] = "ram";
     to print other array we need to print all index one by one
     but to print char array we can use %s as specifier and print the whole array indexes
     example:

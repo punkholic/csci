@@ -40,16 +40,7 @@ void main(){
                 212 >> 0 = 11010100 (No Shift)
     */
 
-    printf(" a & b = %d\n", a & b);
-    printf(" a | b = %d\n", a | b);
-    printf(" a ^ b = %d\n", a ^ b);
-    printf(" ~ b = %d\n", ~b);
-    printf(" a << b = %d\n", a << b);
-    printf(" a >> b = %d\n", a >> b);
-}
-
-
-/*
+   /*
 
    Bitwise operators:
         &   Bitwise AND
@@ -60,3 +51,13 @@ void main(){
         >>  Shift right
 
 */
+
+    printf(" a & b = %d\n", a & b);
+    printf(" a | b = %d\n", a | b);
+    printf(" a ^ b = %d\n", a ^ b);
+    printf(" ~ b = %d\n", ~b);
+    printf(" a << b = %d\n", a << b);
+    printf(" a >> b = %d\n", a >> b);
+}
+
+
