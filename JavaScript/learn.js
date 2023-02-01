@@ -1,2 +1,5 @@
-process.stdout.write("Welcome to GeeksforGeeks! ");
-process.stdout.write("A computer science portal for geeks");
+a = 1
+b = 2
+c = a + b
+a = `${a} + ${b} = ${c}`
+console.log(a)
