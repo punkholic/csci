@@ -31,3 +31,18 @@ function sum1(a, b) {
     c = a + b;
     return c;
 }
+
+
+
+// way 1
+function abc(a){
+    console.log(a)
+}
+// way 2
+test = function (a){
+    console.log(a)
+} 
+// way 3
+abc2 = (a) => {
+    console.log(a)
+}
