@@ -1,33 +1,9 @@
-function generateRandomRGB(){
-    color = `RGB(${Math.ceil(Math.random() * 255 )}, ${Math.ceil(Math.random() * 255 )}, ${Math.ceil(Math.random() * 255 )})`;
-    return color
-}
-questionDiv = document.querySelector("#questionDiv")
-realAnswer = generateRandomRGB()
-questionDiv.style.backgroundColor = realAnswer;
-questionText = document.querySelector("#questionDiv > h1:nth-child(1)")
-questionText.textContent = realAnswer
-
-answerOptions = document.querySelectorAll("#options div")
-answerIndex = Math.ceil(Math.random() * 3) - 1
-
-for(i =0;i<answerOptions.length; i++){
-    if(i == answerIndex){
-        answerOptions[i].style.backgroundColor = realAnswer
-
-    }else{
-        answerOptions[i].style.backgroundColor = generateRandomRGB()
-    }
-}
-// a = [1,2,3]
-
-answerOptions.forEach(function test(value, index){
-    value.addEventListener('click', function clickGar(){
-        if(index == answerIndex){
-            questionText.textContent = "correct"
-        }else{
-            questionText.textContent = "incorrect"
-        }
-        answerIndex= 77
-    })
+home = document.querySelector("body > p:nth-child(1)")
+about = document.querySelector("body > p:nth-child(2)")
+content = document.querySelector("body > div:nth-child(3) > p:nth-child(1)")
+home.addEventListener('click', function test(){
+    content.textContent = "home ho"
+})
+about.addEventListener('click', function test(){
+    content.textContent = "about ho"
 })

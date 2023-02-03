@@ -23,6 +23,9 @@ for(i =0;i<answerOptions.length; i++){
 
 answerOptions.forEach(function test(value, index){
     value.addEventListener('click', function clickGar(){
+        if(answerIndex > 2){
+            return
+        }
         if(index == answerIndex){
             questionText.textContent = "correct"
         }else{
