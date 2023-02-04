@@ -2,10 +2,27 @@
 roads = document.querySelectorAll("#road #row")
 obstacles = document.querySelector("#obstacles")
 car = document.querySelector("#car")
-carPosition = 592
+carPositionXAxis = 592
+carPositionYAxis = 0
 
 
 //functions:
+
+function moveObstacles(){
+    decrementValue = 5
+    setInterval(() => {
+        persons = document.querySelectorAll("#obstacles img")
+        persons.forEach(e => {
+            topMargin = parseInt(e.style.marginTop.match(/[0-9]+/)[0])
+            if(topMargin - decrementValue <= 0){
+                e.remove()
+                createObstacles(1)
+            }
+            e.style.marginTop = `${topMargin - decrementValue}px`
+        })
+    } , 100)
+
+}
 function createImageTag(){
     imgTag = document.createElement("img")
     imgTag.src = "http://127.0.0.1:5500/carGame/walking.gif"
@@ -44,22 +61,7 @@ function generateRoadLines(lines){
     }
     return lines
 }
-function positionCar(movement){
-    switch(movement){
-        case '+' :{
-            if(carPosition < 692){
-                carPosition += 10
-            }
-            break
-        }
-        case '-' : {
-            if(carPosition > 492){
-                carPosition -= 10
-            }
-        }
-    }
-    car.style.marginLeft = `${carPosition}px`;
-}
+
 
 function roadMovement(){
     roadLines = generateRoadLines("")
@@ -73,19 +75,42 @@ function roadMovement(){
 
 
 //function calls:
-createObstacles(3)
-positionCar()
+car.style.marginLeft = `${carPositionXAxis}px`;
+car.style.marginTop = `${carPositionYAxis}px`;
 roadMovement()
+createObstacles(3)
+moveObstacles()
 
 // events:
 document.querySelector("body").addEventListener('keydown', (e) => {
     switch(e.key){
         case 'ArrowRight':{
-            positionCar('+')
+            if(carPositionXAxis < 692){
+                carPositionXAxis += 10
+            }
             break
         }
         case 'ArrowLeft':{
-            positionCar('-')
+            if(carPositionXAxis > 492){
+                carPositionXAxis -= 10
+            }
+            break
+        }
+        case 'ArrowDown':{
+            if(carPositionYAxis < 460){
+                carPositionYAxis += 10
+            }
+            break
+        }
+        case 'ArrowUp':{
+            if(carPositionYAxis > 0){
+                carPositionYAxis -= 10
+            }
         }
     }
+    console.log(carPositionYAxis)
+
+    car.style.marginLeft = `${carPositionXAxis}px`;
+    car.style.marginTop = `${carPositionYAxis}px`;
+
 })
