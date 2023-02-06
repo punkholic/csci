@@ -24,7 +24,7 @@ function moveObstacles(){
             topMargin = parseInt(e.style.marginTop.match(/[0-9]+/)[0])
             if(topMargin - decrementValue <= 0){
                 e.remove()
-                createObstacles(obstaclesCount)
+                createObstacles(1)
             }
             e.style.marginTop = `${topMargin - decrementValue}px`
         })
