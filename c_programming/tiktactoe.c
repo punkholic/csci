@@ -32,8 +32,8 @@ void main()
             }
         }
         
-        // system("clear");
-        system("cls");
+        system("clear");
+        // system("cls");
         printf("%s\n", gamePrintData);
 
      
