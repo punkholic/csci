@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+</body>
+<script>
+
+    /* 
+    we can play with css styles with the help of javascript.
+    to do so, we need to select the element first
+    */
+    h1 = document.querySelector("h1")
+    /*
+    we can use style property of element to change the style,
+    with above code we selected an element to give it some css style with js(javascript)
+    syntax:
+    h1.style.cssProperties = "values"
+
+    to use css properties we need to use camel case, what it means is
+    in css to change font size we need to code like: font-size: 10px;
+    to do the same with javascript we need to use camel case like: fontSize
+    */
+   h1.style.color = "red"
+   h1.style.fontSize = "30px"
+</script>
+</html>

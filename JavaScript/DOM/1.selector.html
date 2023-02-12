@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="idName" class="className">Hello World</h1>
+
+</body>
+<script>
+
+    /* we can select any element from html with DOM using querySelector
+    syntax:
+    document.querySelector("css_selector")
+
+    we can use same selector that can be used in css, so to select h1 tag we need
+    to write h1 on the parameter of querySelector like:
+    */
+   h1 = document.querySelector("h1")
+   console.log("selecting h1 using tag name: ", h1)
+   /*
+   the above code selects the h1 element and stores it in a variable named h1
+   we can also use id and class attributes to select an element like:
+
+   (.) is used infront of class value in the selector string like .className and
+   (#) is used infront of class value in the selector string like #idName and 
+   */
+   h1 = document.querySelector(".className")
+   console.log("selecting h1 using class value: ", h1)
+   h1 = document.querySelector("#idName")
+   console.log("selecting h1 using id value: ", h1)
+</script>
+</html>

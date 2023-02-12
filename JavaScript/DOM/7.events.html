@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Me</button>
+
+</body>
+<script>
+
+    /*
+    we can capture an event and run a function when the event is triggered,
+    for example we can listen to an event "click" on the element button and provide
+    it with a function. so when the button is clicked the function will get called
+    syntax:
+    element.addEventListener('click', functionName)
+
+    there are many events like click, some are:
+
+    change 	    An HTML element has been changed
+    click 	    The user clicks an HTML element
+    mouseover 	The user moves the mouse over an HTML element
+    mouseout 	The user moves the mouse away from an HTML element
+    keydown 	The user pushes a keyboard key
+    load 	    The browser has finished loading the page
+
+    */
+    function toRun(e){
+        console.log("button clicked")
+    }
+    button = document.querySelector("button")
+    button.addEventListener('click', toRun)
+    /*
+    addEventListener gives a parameter to pass the information of event that occured
+    here,
+    function toRun(e){
+        console.log("button clicked")
+    }
+    the e variable can be used to get information of the event that occurred
+    */
+</script>
+</html>

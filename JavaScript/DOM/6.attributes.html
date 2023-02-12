@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <img myAttribute="12" src="../games/carGame/images/car.png" width="100px" height="100px" alt="">
+</body>
+<script>
+
+    /* 
+    we can get attributes values of any tag with js, to do so we need to select the element first
+    syntax:
+    element.attributes['attribute'].value
+    */
+    img = document.querySelector("img")
+    src = img.attributes['src'].value
+    width = img.attributes['width'].value
+    height = img.attributes['height'].value
+    myAttribute = img.attributes['myAttribute'].value
+   
+    console.log(src, width, height, myAttribute)
+    
+</script>
+</html>

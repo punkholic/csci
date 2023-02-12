@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="textContentExample">Hello World</div>
+    <div id="innerHTMLExample">Hello World</div>
+
+</body>
+<script>
+
+    /* 
+    we can change the text content with js with textContent property of element like:
+    element.textContent = "value"
+
+    but with textContent we cannot insert html tags like:
+    element.textContent = "<h>Hello</h1>"
+
+    so, to put tags with js we need to use innerHTML property like:
+    element.innerHTML = "<h>Hello</h1>"
+
+
+    */
+
+    textContentExample = document.querySelector("#textContentExample")
+    textContentExample.textContent = "<h1>asd</h1>"
+    
+    innerHTMLExample = document.querySelector("#innerHTMLExample")
+    innerHTMLExample.innerHTML = "<h1>asd</h1>"
+
+
+</script>
+</html>

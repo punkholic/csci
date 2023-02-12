@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+</body>
+<script>
+
+    /* 
+    we can create new element which does not exist in html with js 
+    syntax:
+    newElement = document.createElement("tag_name")
+    */
+    newElement = document.createElement("h1")
+    //change its content:
+    newElement.textContent = "hello"
+
+    // we can also get any element text with this property like:
+    gotValue = newElement.textContent
+    console.log(gotValue) // output: hello
+    /*
+    after creating new element which does not exist in html we need to insert it 
+    in html code, so to inject it we need to select an element in which we are willing to insert the element:
+
+    below we select body tag to insert our newly created tag:
+    */
+   body = document.querySelector("body")
+   /* 
+   to insert new element we need to use append property of element like:
+   syntax: element.append(element)
+   */
+   body.append(newElement)
+
+</script>
+</html>

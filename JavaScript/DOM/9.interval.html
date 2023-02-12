@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        /*
+we can keep executing a function concurrently with the help of setInterval
+
+setInterval will run a given function in a given time interval, 
+syntax:
+setInterval(functionName, milliseconds)
+
+we can stop the given interval by storing it first in a variable and 
+using a function "clearInterval"
+*/
+        i = 0
+        function toRun() {
+            i++
+            console.log(i)
+        }
+        newInterval = setInterval(toRun, 1000)
+
+
+        function stopInterval(){
+            // to stop the interval:
+            clearInterval(newInterval)
+        }
+
+        // the stopInterval function will execute after 5 sec, refer 8.timeout.html file
+        setTimeout(stopInterval, 5000);
+
+
+    </script>
+</body>
+
+</html>

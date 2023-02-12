@@ -70,6 +70,7 @@ function generateRoadLines(lines){
         firstPart = lines.match(/^(\||<br>)/g)[0]    
         lines = lines.replace(/^(\||<br>)/g, "") + firstPart    
     }
+    console.log(lines)
     return lines
 }
 
