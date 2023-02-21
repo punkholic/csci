@@ -1,6 +1,7 @@
 <?php
 $a = 12;
-$b = 14;
+$b = 12;
+
 var_dump($a === $b);
 var_dump($a !== $b);
 var_dump($a > $b);

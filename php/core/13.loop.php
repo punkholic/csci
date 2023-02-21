@@ -32,6 +32,7 @@
 
 // incremeant part can also be written as:  for(int i = 0; i< 5; i = i + 1)
 
+
 for($i = 0; $i < 5; $i++){
     echo ("for loop i = $i\n");
 }

@@ -17,7 +17,7 @@
     }
 */
 
-$a = 3;
+$a = 11;
 switch($a){
     case 1:{
         echo ("the value of a is 1\n");

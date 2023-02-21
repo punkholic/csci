@@ -97,7 +97,7 @@ function updateScore(){
             obstaclesCount += 1
         }
         document.querySelector("#gameInfo p").textContent = `Score: ${initialScore}`
-    } , 1000)
+    } , 200)
 }
 
 function carMovementEvent(e){
@@ -146,7 +146,7 @@ function checkCollusion(){
         obstaclePosition = e.getBoundingClientRect()
         distanceApartY = Math.abs(obstaclePosition.y - carPosition.y)
         distanceApartX = Math.abs(obstaclePosition.x - carPosition.x)
-        if(distanceApartY < 70 && distanceApartX < 30){
+        if(distanceApartY < 50 && distanceApartX < 30){
             pauseGame()
         }
     })

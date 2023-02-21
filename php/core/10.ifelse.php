@@ -1,6 +1,6 @@
 <?php
 $a = 12;
-$b = 14;
+$b = 12;
 /*
 syntax:
 if(condition){

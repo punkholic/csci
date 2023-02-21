@@ -2,6 +2,7 @@
 // this is function call
 functionName();
 
+
 /*
 we cannot access variables from one function to another directly so we need to pass them with some functionality
 to pass values from main to function we need to pass parameters

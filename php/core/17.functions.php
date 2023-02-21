@@ -17,7 +17,6 @@ echo ("function with return value = " + sum1(1, 2));
 */
 
 
-
 // this is function defination
 
 function sum($a, $b) {

@@ -6,7 +6,6 @@ so to store many kind of values in same variable name we can use array
 */
 $a = 12;
 // we can create array as:
-
 $newArray1 = [1,2,3];
 // modifying array index:
 $newArray1[0] =43;

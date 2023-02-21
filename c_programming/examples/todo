@@ -1,0 +1,31 @@
+student search
+    for loop user garne
+    tespaxi 
+    #include <string.h>
+    strcmp("abc", "abc"):
+        jaba strcmp ko string milcha tesle 0 output dinxa
+    jun strcmp ma milxa teslai print gardine
+
+
+
+student add
+    student counter banaune suruma teslai value 0 dine
+    harek student add garesi counter badhaedine
+
+student show all
+    for loop use garne
+    ani harek index(i) lai use garera harek student ko data     print garne
+save data
+    save data ko lagi struct nai ekai choti save garna         milcha     1 line code ho tesko function huncha eauta         fwrite vanne
+    teyo search garnu ya yo link ma gaeyra bujna khojnu
+    https://www.geeksforgeeks.org/readwrite-structure-file-c/
+load data
+    data load garna fread vanne function khojera sikne
+    https://www.geeksforgeeks.org/readwrite-structure-file-c/
+exit
+
+
+
+
+student
+
