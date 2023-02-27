@@ -1,17 +1,25 @@
 <?php 
-    if(isset($_POST['username'])){
-        $username = $_POST['username'];
+    if(isset($_POST['name'])){
+        $name = $_POST['name'];
         $password = $_POST['password'];
-        $connection = mysqli_connect("localhost", "root", "root", "sms6");
-        $result = $connection->query("select * from teacher_tb WHERE username = '$username' and password = '$password'");
-        if($result->num_rows != 0){
-            header("Location: /dashbord.html");
-        }else{
+        $connection = mysqli_connect("localhost", "root", "root", "xyz");
+        $result = $connection->query("SELECT * FROM student WHERE name = '$name' and password = '$password'");
+        if($result->num_rows != 0 ){
+            header("Location: /login.html");
+        }else{  
             header("Location: /failed.html");
         }
-       return;
+        return;
+
     }
+
+    // $connection = mysqli_connect("localhost", "root", "root", "xyz");
+    // $query = "INSERT INTO student(name, roll_no, password) VALUES('hari', 1, 'xyz')";
+    // $connection->query($query); 
+
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,21 +27,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
 </head>
 <body>
     <form method="POST">
-        <label for="username">username</label>
-        <input type="text" id="username" name="username"/>
+        name:
+        <input type="text" name="name" id="email">
         <br>
-        <label for="password">password</label>
-        <input type="password" id="password" name="password"/>
+        Password:
+        <input type="password" name="password" id="password">
         <br>
-        <input type="submit" name="submit" value="submit gar"/>
-
+        <input type="submit" value="submit">
     </form>
-    <script>
-        console.log("Hello World");
-    </script>
 </body>
-</html>
+</html> 

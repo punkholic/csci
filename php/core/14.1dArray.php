@@ -14,6 +14,4 @@ $newArray1[0] =43;
 $newArray = ["ram", 1, true, 4.5];
 // we can also print entire array :
 print_r($newArray);
-
-
-   
+ 

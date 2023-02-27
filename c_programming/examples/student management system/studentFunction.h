@@ -4,6 +4,7 @@
 typedef struct StudentStructure{
         int rollNo;
         char name[100];
+        int feePaid;
         int classNumber;
 } Student;
 

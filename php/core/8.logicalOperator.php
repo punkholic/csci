@@ -14,7 +14,7 @@ var_dump( $a == $b && $c == $d);
    and if the condition inside () is false it inverts it as true 
    */
 
-var_dump(!($a == $b || $c == $d));
+var_dump(! ($a == $b || $c == $d) );
 
 /*
       &&  	Logical and 	

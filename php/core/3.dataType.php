@@ -5,6 +5,9 @@
     a = 4342343;
     where a is the variable name.
 */
+
+
+
 $a = 12;
 $b = 'a';
 $c = 12.33;

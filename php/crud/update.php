@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    failed
+    <form method="POST">
+        Name:
+        <input type="text" name="name"/>
+        <br>
+        password:
+        <input type="password" name="password"/>
+        <br>
+        <input type="submit" value="Add">
+    </form>
 </body>
 </html>

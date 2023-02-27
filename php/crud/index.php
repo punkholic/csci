@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>vayo</h1>
+
+<a href="https://google.com">Google</a>
+<a href="create.php">Create</a>
+<a href="read.php">Read</a>
+<a href="update.php">update</a>
 </body>
 </html>
