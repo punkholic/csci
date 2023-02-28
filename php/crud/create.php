@@ -1,27 +1,11 @@
 <?php 
-
-    if(isset($_POST["name"])){
-        $name = $_POST["name"];
-        $password = $_POST["password"];
-        
-        
-        $connection = mysqli_connect("localhost", "root", "root", "abc");
-        $query = "UPDATE users SET name = '$name', password = '$password' WHERE name = 'sita'";
-        $result = $connection->query($query);
-
-
-
-
-        // if($result->num_rows != 0 ){
-        //     echo "valid user";
-        // }else{
-        //     echo "invalid user";
-        // }
-
-
+    if(isset($_POST['name'])){
+        $name = $_POST['name'];
+        $password = $_POST['password'];
+        $connection = mysqli_connect("localhost", "root", "root", "csci");
+        print_r($connection->query("SELECT * FROM users"));
     }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
