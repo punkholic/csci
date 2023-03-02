@@ -1,0 +1,2 @@
+personName = "ram"
+print(personName)

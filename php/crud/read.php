@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,18 +11,40 @@
     <table border="1px" width="100%">
         <tr>
             <th>Name</th>
-            <th>Roll No</th>
-            <th>Email</th>
+            <th>password</th>
             <th>Action</th>
         </tr>
-        <tr>
-            <td>Ram</td>
-            <td>1</td>
-            <td>a@b</td>
+      
+        <?php 
+        $connection = mysqli_connect("localhost", "root", "root", "csci");
+        $result = $connection->query("SELECT * FROM users");
+        $firstData = $result->fetch_assoc();
+        while($firstData != null){
+            ?>
+            <tr>
+            <td><?php echo $firstData['name']; ?></td>
+            <td><?php echo $firstData['password']; ?></td>
             <td>
-                <a href="./delete.php">Delete</a>
+                <a href="./delete.php?name=<?php echo $firstData['name'] ?>">Delete</a>
+                <a href="./update.php?name=<?php echo $firstData['name'] ?>">Update</a>
             </td>
-        </tr>
+            </tr>            
+            <!-- <tr> -->
+            <!-- <td> <?php echo $firstData['name']; ?></td>
+            <td> <?php echo $firstData['password']; ?></td>
+            <td>
+                <a href="./delete.php?name=<?php echo $firstData['name'] ?>">Delete</a>
+                <a href="./update.php?name=<?php echo $firstData['name'] ?>">Update</a>
+            </td>
+        </tr> -->
+
+            <?php
+            $firstData = $result->fetch_assoc();
+        }
+?>
+
+        
+      
         
     </table>
 </body>

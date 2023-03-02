@@ -1,0 +1,21 @@
+a = 10;
+a += 12; # this is same as a = a + 12, but in short form, same goes for following lines:
+print(a);
+a -= 12;
+print(a);
+a *= 12;
+print(a);
+a /= 12;
+print(a);
+a %= 12;
+print(a);
+a &= 12;
+print(a);
+a |= 12;
+print(a);
+a ^= 12;
+print(a);
+a >>= 12;
+print(a);
+a <<= 12;
+print(a);

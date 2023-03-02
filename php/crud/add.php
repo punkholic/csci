@@ -3,7 +3,13 @@
         $name = $_POST['name'];
         $password = $_POST['password'];
         $connection = mysqli_connect("localhost", "root", "root", "csci");
-        print_r($connection->query("SELECT * FROM users"));
+        $result = $connection->query("INSERT INTO users(name, password) VALUES('$name', '$password')");
+        
+        if($result){
+            echo "added";
+        }else{
+            echo "failed";
+        }
     }
 ?>
 
