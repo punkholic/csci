@@ -1,12 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>abc</h1>
-</body>
+<html>
+    <head>
+        <title>Example</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        img{
+            border: 1px solid black;
+            height: 80px;
+            margin-left: 50px;
+            width: 150px;
+        }
+        ul li{
+            color: blue;
+            list-style-type: none;
+            float: left;
+            border-right: 3px solid black;
+            padding-right: 10px;
+            margin-right: 10px;
+        }
+        .eauta-select{
+            border-right: none;
+        }
+        
+       #buttons{
+        border: 2px solid black;
+        width: 160px;
+        box-shadow: 3px 3px;
+        margin-bottom: 20px;
+        margin-left: 50%;
+        display: flex;
+       }
+       #selected-button{
+        background-color: brown;
+        color: white;
+       }
+       #notselected-button{
+        background-color: white;
+        color: black;
+       }
+       button{
+            padding: 5px 15px;
+            border: 1px solid black;
+        }
+        .side-by-side{
+            margin-top: 50px;
+            float: left;
+        }
+        ul {
+            margin-left: 200px;
+        }
+     
+      
+    </style>
+    </head>
+    <body>
+        
+        <div class="heading-part">
+            <div class="side-by-side">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/681px-Placeholder_view_vector.svg.png" alt="Pet Me Logo">
+            </div>
+            <div class="side-by-side">
+                <div id="buttons">
+                    <button id="selected-button">ADPOT</button>
+                    <button id="notselected-button">REGISTER</button>
+                </div>
+                
+                <ul>
+                    <li>Home</li>
+                    <li>Animals</li>
+                    <li>Pet care & Health</li>
+                    <li>Pet near me</li>
+                    <li>How to do</li>
+                    <li>Sign in</li>
+                    <li class="eauta-select">Message us</li>
+                  </ul> 
+            </div>
+            
+        </div>
+      
+      
+    </body>
 </html>
