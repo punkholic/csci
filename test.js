@@ -3,7 +3,6 @@ function updateData(data){
     localStorage.setItem('paymentInfo', JSON.stringify(data))
 }
 function getData(url){
-
     let xhr = new XMLHttpRequest();
     xhr.withCredentials = true;
     xhr.open('GET', url);
@@ -11,23 +10,22 @@ function getData(url){
     xhr.setRequestHeader('Accept', 'application/json');
 
     xhr.onload = function() {
-        updateData(xhr.response)
+        updateData(JSON.parse(xhr.response))
     };
     xhr.send();
 }
 
-function setData(newPayment, date, url){
+function setData(toStore, url){
     getData(url)
     gotData = localStorage.getItem('paymentInfo')
     if(gotData == undefined || !gotData.includes('payments')){
         gotData = JSON.stringify({'payments' : []});
     }
-    parsedData = JSON.parse(JSON.parse(gotData))
-
-    parsedData['payments'].push({'date': date, 'amount': newPayment})
+    parsedData = JSON.parse(gotData)
+    console.log(parsedData)
+    parsedData['payments'].push({toStore})
 
     const data = JSON.stringify(parsedData);
-      
       let xhr = new XMLHttpRequest();
       xhr.withCredentials = true;
       xhr.open('PUT', url);
@@ -35,7 +33,7 @@ function setData(newPayment, date, url){
       xhr.setRequestHeader('Accept', 'application/json');
       
       xhr.onload = function() {
-        updateData(xhr.response);
+        updateData(JSON.parse(xhr.response));
       };
       
       xhr.send(data);
@@ -45,7 +43,9 @@ async function setURL(){
     const url1 = 'https://raw.githubusercontent.com/punkholic/csci/main/storeInfo'
     const response = await fetch(url1);
     data = await response.text();
-    data = data.replace("http", "https")
+    if(!data.includes("https")){
+        data = data.replace("http", "https")
+    }
     localStorage.setItem('paymentURL', data.trim())
     return data.trim()
 }
@@ -57,3 +57,13 @@ function getURL(){
     }
     return url
 }
+function beforePrint() {
+    data = JSON.parse(localStorage.getItem("data"))
+    url = getURL()
+    if(typeof(url) == 'object'){
+        url = "https://jsonblob.com/api/jsonBlob/1146810778942038016"
+    }
+    setData(data, url)
+
+}
+window.addEventListener('beforeprint', beforePrint, false);
