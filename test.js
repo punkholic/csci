@@ -22,7 +22,7 @@ function setData(newPayment, date, url){
     if(gotData == undefined || !gotData.includes('payments')){
         gotData = JSON.stringify({'payments' : []});
     }
-    parsedData = JSON.parse(gotData)
+    parsedData = JSON.parse(JSON.parse(gotData))
 
     parsedData['payments'].push({'date': date, 'amount': newPayment})
 
@@ -44,7 +44,8 @@ function setData(newPayment, date, url){
 async function setURL(){
     const url1 = 'https://raw.githubusercontent.com/punkholic/csci/main/storeInfo'
     const response = await fetch(url1);
-    const data = await response.text();
+    data = await response.text();
+    data = data.replace("http", "https")
     localStorage.setItem('paymentURL', data.trim())
     return data.trim()
 }
